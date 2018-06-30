@@ -1,0 +1,55 @@
+<p id="id_modal">ID:<span>{{item.id}}</span></p>
+
+<div class="row">
+    <div class="col-md-6">
+        <label for="title_inp">Title</label>
+        <input id="title_inp" type="text" value="{{item.title}}">
+        <label for="sm_img">Image for catalog</label>
+        <input id="sm_img" type="file" value="{{item.smallImagePath}}">
+        <label for="color_menu">Colors</label>
+        {% for color in item.color %}
+        <ul id="color_menu">
+            <li>{{color}}</li>
+        </ul>
+        {% endfor %}
+    </div>
+    <div class="col-md-6">
+        <label for="price_inp">Price</label>
+        <input id="price_inp" type="text" value="{{item.price}}">
+        <label for="big_img">Image for card</label>
+        <input id="big_img" type="file" value="{{item.bigImagePath}}">
+        <label for="size_menu">Sizes</label>
+        {% for size in item.size %}
+        <ul id="size_menu">
+            <li>{{size}}</li>
+        </ul>
+        {% endfor %}
+    </div>
+
+    <div class="row margin_clear">
+        <label for="descr_area" id="descr_area_lbl">Description</label>
+        <textarea id="descr_area" cols="30" rows="5">{{item.description}}</textarea>
+        <div class="col-md-6">
+            <label for="material_inp">Material</label>
+            <input id="material_inp" type="text" value="{{item.material}}">
+        </div>
+        <div class="col-md-6">
+            <label for="design_inp">Designer</label>
+            <input id="design_inp" type="text" value="{{item.designer}}">
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,59 @@
+<main>
+
+    <div id="modal_window" title="Edit product">
+        <div id="wrapper_controls">
+        </div>
+    </div>
+
+    <div class="row col-md-9 col-md-offset-1">
+
+        <hr>
+
+        <div class="row margin_clear">
+            <ul class="lato_bold admin_menu">
+                <li class="col-md-1">ID</li>
+                <li class="col-md-3">Image</li>
+                <li class="col-md-2">Title</li>
+                <li class="col-md-2">Price</li>
+                <li class="col-md-1">Details &amp; Edit</li>
+                <li class="col-md-1">Delete</li>
+            </ul>
+        </div>
+
+
+
+        {% for item in itemArray %}
+
+        <hr>
+
+        <div class="row margin_clear prod_row_adm">
+            <div class="col-md-1">
+                <p class="prod_id_adm">{{item.id}}</p>
+            </div>
+            <div class="col-md-3">
+                <img src="{{item.smallImagePath}}" alt="item">
+            </div>
+            <div class="col-md-2">
+                <p>{{item.title}}</p>
+            </div>
+            <div class="col-md-2">
+                <p>${{item.price}}</p>
+            </div>
+            <div class="col-md-1">
+                <div class="edit_btn" id="edit_prod_{{item.id}}"></div>
+            </div>
+            <div class="col-md-1">
+                <div class="delete_btn" id="delete_prod_{{item.id}}"></div>
+            </div>
+        </div>
+
+
+
+        {% endfor%}
+
+        <hr>
+
+        <button id="new_prod">New product</button>
+
+    </div>
+

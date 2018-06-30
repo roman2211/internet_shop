@@ -1,0 +1,342 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>{{pageName}}</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="/css/bootstrap_col_15.css">
+    <link rel="stylesheet" href="/css/font-awesome.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <script></script>
+
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="../../assets/js/html5shiv.js"></script>
+    <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+<div id="container">
+
+    <hr class="border_line">
+    <div class="row margin_clear">
+        <header class="col-md-9 center-block float_clear">
+
+            <div class="logo_and_browse_block">
+                <a href="/">
+                <div class="logo"></div>
+                </a>
+                <p class="brand lato_light black_pink_par">BRAN<span class="lato_black">D</span></p>
+
+                <div class="btn-group browse_sel">
+                    <button type="button" class="dropdown-toggle" data-toggle="dropdown">Browse<span
+                                class="caret"></span></button>
+                    <ul class="dropdown-menu browse_drop_menu" role="menu">
+                        <li class="section">
+                            <a href="#">Women</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">Dresses</a>
+                        </li>
+                        <li>
+                            <a href="#">Tops</a>
+                        </li>
+                        <li><a href="#">Sweaters/Knits</a></li>
+                        <li><a href="#">Jackets/Coats</a></li>
+                        <li><a href="#">Blazers</a></li>
+                        <li><a href="#">Denim</a></li>
+                        <li><a href="#">Leggings/Pants</a></li>
+                        <li><a href="#">Skirts/Shorts</a></li>
+                        <li>
+                            <a href="#">Accessories</a>
+                        </li>
+                        <li class="section">
+                            <a href="#">Men</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">Tees/Tank tops</a>
+                        </li>
+                        <li>
+                            <a href="#">Shirts/Polos</a>
+                        </li>
+                        <li>
+                            <a href="#">Sweaters</a>
+                        </li>
+                        <li>
+                            <a href="#">Sweatshirts/Hoodies</a>
+                        </li>
+                        <li>
+                            <a href="#">Blazers</a>
+                        </li>
+                        <li>
+                            <a href="#">Jackets/vests</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <input type="text" placeholder="Search for item" id="search_input">
+
+
+                <div id="search_but">
+                    <div id="search"></div>
+                </div>
+
+                <div id="cart_block">
+
+                    <div class="btn-group account">
+                        <button type="button" class="dropdown-toggle" data-toggle="dropdown">My Account<span
+                                    class="caret"></span></button>
+                        <ul class="dropdown-menu" role="menu">
+                            <li>
+                                <a href="#"></a>
+                            </li>
+                            <li>
+                                <a href="#"></a>
+                            </li>
+                            <li>
+                                <a href="#"></a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#"></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <a href="/basketController/Index">
+                        <div id="cart"><div id="count_product"><p>{{count}}</p></div></div>
+                    </a>
+
+                    <a href="/authController/ShowAccount">
+                        <div id="account_icon" style="display:{{display}}"></div>
+                    </a>
+
+                    <div class="log_ref_wrapper">
+                        <a href="/authController/Index">{{inOrOut}}</a>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+    </div>
+
+    <hr class="border_line">
+
+    <div class="row margin_clear">
+        <nav class="col-md-9 center-block float_clear">
+            <ul class="menu">
+                <li><a href="#">
+                        Home
+                    </a></li>
+                <li><a href="#">
+                        Man
+                    </a></li>
+                <li><a href="#">
+                        Women
+                    </a></li>
+                <li><a href="#">
+                        Kids
+                    </a></li>
+                <li><a href="#">
+                        Accoseriese
+                    </a></li>
+                <li><a href="#">
+                        Featured
+                    </a></li>
+                <li><a href="#">
+                        Hot deals
+                    </a></li>
+            </ul>
+        </nav>
+
+    </div>
+
+    {{content|raw}}
+
+    <div class="row margin_clear">
+
+        <div class="resp_block col-md-12">
+            <div class="resp col-md-6">
+                <div class="col-md-4 padding_right_clear">
+                    <img src="/images/icons/portr.png" alt="portret">
+                </div>
+                <div class="col-md-7">
+                    <p class="responce lato_italic">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar
+                        purus condimentum a. Aliquam condimentum mattis neque sed pretium”</p>
+                    <p class="sig lato_bold"><span class="lato_light pink_font">Bin Burhan</span> <br> Dhaka, Bd</p>
+                    <div class="lines_block">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subscribe col-md-6">
+                <div class="col15-md-9">
+                    <p class="lato_regular"><span>Subscribe</span> <br> FOR OUR NEWLETTER AND PROMOTION</p>
+
+                    <form action="#">
+                        <input type="email" placeholder="Enter Your Email" class="sub_input">
+                        <button class="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row margin_clear">
+        <div class="wrapper_info col-md-9 center-block float_clear">
+            <div class="col15-md-15 info_block padding_left_clear">
+                <div class="col15-md-6 info padding_left_clear">
+                    <div class="logo"></div>
+                    <p class="brand lato_light">BRAN<span class="lato_black pink_font">D</span></p>
+
+                    <p class="text lato_light">Objectively transition extensive data rather than cross functional <br>
+                        solutions. Monotonectally syndicate multidisciplinary materials <br> before go forward benefits.
+                        Intrinsicly syndicate an expanded array <br> of processes and cross-unit partnerships. <br><br>
+                        Efficiently plagiarize 24/365 action items and focused infomediaries. <br>Distinctively seize
+                        superior initiatives for wireless technologies. <br> Dynamically optimize.</p>
+                </div>
+
+                <div class="col15-md-3 info_menu_block">
+                    <ul class="info_menu">
+                        <li class="menu_title">Company</li>
+                        <a href="#">
+                            <li>Home</li>
+                        </a>
+                        <a href="#">
+                            <li>Shop</li>
+                        </a>
+                        <a href="#">
+                            <li>About</li>
+                        </a>
+                        <a href="#">
+                            <li>How it works</li>
+                        </a>
+                        <a href="#">
+                            <li>Contact</li>
+                        </a>
+                    </ul>
+
+                </div>
+                <div class="col15-md-3">
+                    <ul class="info_menu">
+                        <li class="menu_title">Information</li>
+                        <a href="#">
+                            <li>Tearms&amp;Conditions</li>
+                        </a>
+                        <a href="#">
+                            <li>Privacy Policy</li>
+                        </a>
+                        <a href="#">
+                            <li>How to Buy</li>
+                        </a>
+                        <a href="#">
+                            <li>How to Sell</li>
+                        </a>
+                        <a href="#">
+                            <li>Promotion</li>
+                        </a>
+                    </ul>
+
+                </div>
+                <div class="col15-md-3">
+                    <ul class="info_menu">
+                        <li class="menu_title">Shop category</li>
+                        <a href="#">
+                            <li>Men</li>
+                        </a>
+                        <a href="#">
+                            <li>Women</li>
+                        </a>
+                        <a href="#">
+                            <li>Child</li>
+                        </a>
+                        <a href="#">
+                            <li>Apparel</li>
+                        </a>
+                        <a href="#">
+                            <li>Browse All</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    </main>
+
+    <div class="row margin_clear">
+        <footer class="col-md-12">
+            <div class="col-md-9 center-block float_clear padding_clear">
+                <p class="lato_regular">&copy; Brand All rights reserved.</p>
+                <div class="share">
+                    <a href="#">
+                        <div class="icon_sq">
+                            <div id="fbook"></div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="icon_sq">
+                            <div id="twit"></div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="icon_sq">
+                            <div id="in"></div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="icon_sq">
+                            <div id="pent"></div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="icon_sq">
+                            <div id="goog"></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</div>
+
+<link rel="stylesheet" href="/bower_components/jquery-ui/themes/base/all.css">
+<link rel="stylesheet" href="/bower_components/jquery-ui/themes/ui-lightness/jquery-ui.min.css">
+<link rel="stylesheet" href="/bower_components/jquery-ui/themes/ui-lightness/theme.css">
+<script src="/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="/bower_components/jquery-ui/jquery-ui.min.js"></script>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="/js/castDropdownMenuItem.js"></script>
+<script src="/js/cart.js"></script>
+<script src="/js/addItem.js"></script>
+<script src="/js/adminPart.js"></script>
+<script src="/js/catalog.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="/js/lib/bootstrap.min.js"></script>
+
+</body>
+
+</html>

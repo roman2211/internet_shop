@@ -1,0 +1,90 @@
+footer {
+    height: 79px;
+    background-color: #e6e6e6;
+    p {
+        text-transform: capitalize;
+        margin-top: 33px;
+        color: #7a7a7a;
+        font-size: 16px;
+        font-weight: 400;
+        text-align: left;
+        float: left;
+    }
+}
+
+.share {
+    float: right;
+    margin-top: 24px;
+    width: 220px;
+    .icon_sq {
+        float: left;
+        width: 32px;
+        height: 32px;
+        background-color: #ffffff;
+        margin-right: 8px;
+        &:hover {
+            background-color: #f16d7f;
+            color: #f7f7f8;
+        }
+    }
+    #fbook,
+    #twit,
+    #in,
+    #pent,
+    #goog {
+        float: left;
+        &:before {
+            font-family: FontAwesome;
+            color: #b2b2b2;
+            font-size: 1em;
+            font-weight: 400;
+            line-height: 1;
+            text-align: right;
+        }
+    }
+    #fbook {
+        width: 9px;
+        height: 16px;
+        margin-top: 8px;
+        margin-left: 11px;
+        &:before {
+            content: "\f09a";
+        }
+    }
+    #twit {
+        width: 15px;
+        height: 13px;
+        margin-top: 8px;
+        margin-left: 9px;
+        &:before {
+            content: "\f099";
+        }
+    }
+    #in {
+        width: 14px;
+        height: 14px;
+        margin-top: 7px;
+        margin-left: 9px;
+        &:before {
+            content: "\f0e1";
+        }
+    }
+    #pent {
+        width: 12px;
+        height: 15px;
+        margin-top: 8px;
+        margin-left: 10px;
+        &:before {
+            content: "\f231";
+        }
+    }
+    #goog {
+        width: 21px;
+        height: 14px;
+        margin-top: 7px;
+        margin-left: 8px;
+        &:before {
+            content: "\f0d5";
+        }
+    }
+}

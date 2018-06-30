@@ -1,0 +1,141 @@
+<main>
+
+    <div class="row margin_clear">
+
+        <div class="wrapper_arrivals">
+
+            <div class="col-md-9 center-block arrivals float_clear">
+                <p class="lato_black pink_font">New arrivals</p>
+                <p class="lato_light">Home/men/<span class="lato_bold pink_font">new arrivals</span></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row margin_clear">
+        <div class="col-md-9 center-block float_clear choice_menu">
+            <div class="col-md-5 padding_clear">
+                <p class="lato_bold">Product Details</p>
+            </div>
+            <div class="col-md-7 padding_clear">
+                <ul class="lato_bold col15-md-15 padding_clear">
+                    <li class="col15-md-3">unite Price</li>
+                    <li class="col15-md-3">Quantity</li>
+                    <li class="col15-md-3">shipping</li>
+                    <li class="col15-md-3">Subtotal</li>
+                    <li class="col15-md-3">ACTION</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="row margin_clear" id="basket_choice">
+
+
+        {% for item in productsArray %}
+
+        <div class="row margin_clear basket_row">
+
+
+            <div class="col-md-9 center-block float_clear user_choice padding_clear">
+
+                <div class="col-md-5 details">
+                    <a href="/cardItemController/Index?idItem={{item.id}}">
+                        <img src="{{item.smallImagePath}}" alt="choice" id="{{item.id}}">
+                    </a>
+                    <div class="details_par">
+                        <p class="hidden">{{item.basketRow}}</p>
+                        <p class="lato_regular title_choice">{{item.title}}</p>
+                        <p class="lato_regular data">Color: <span class="lato_light">{{item.color}}</span><br>
+                            Size: <span class="lato_light">{{item.size}}</span></p>
+                    </div>
+                </div>
+                <div class="col-md-7 padding_clear">
+                    <div class="col15-md-15 padding_clear">
+                        <div class="col15-md-3 options">
+                            <p class="price_par">$<span>{{item.price}}</span></p>
+                        </div>
+                        <div class="col15-md-3 options">
+                            <div class="input_wrapper">
+                                <input type="text" value="{{item.quantity}}" class="quantity_inp">
+                            </div>
+                        </div>
+                        <div class="col15-md-3 options">
+                            <p>{{item.delivery}}</p>
+                        </div>
+                        <div class="col15-md-3 options">
+                            <p class="subtotal">$<span>{{item.calculateSubtotal}}</span></p>
+                        </div>
+                        <div class="col15-md-3 options">
+                            <div class="delete_icon"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+
+        {% endfor %}
+
+        </div>
+
+        <div class="row margin_clear">
+
+            <div class="col-md-9 center-block float_clear buy_form_block padding_clear">
+
+                <div class="col-md-4 address_block">
+                    <button id="clear_cart">CLEAR SHOPPING CART</button>
+                    <p class="lato_bold ">Shipping Adress</p>
+                    <div class="btn-group country_drop">
+                        <button type="button" class="dropdown-toggle" data-toggle="dropdown">Bangladesh <span
+                                    class="caret"></span></button>
+                        <ul class="dropdown-menu" role="menu">
+                            <li>
+                                <a href="#"></a>
+                            </li>
+                            <li>
+                                <a href="#"></a>
+                            </li>
+                            <li>
+                                <a href="#"></a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <input type="text" placeholder="State" class="buy_form_input">
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Postcode/Zip" class="buy_form_input">
+                    </div>
+                    <button id="get_quote">Get a quote</button>
+                </div>
+
+
+                <div class="col-md-4 coupon_block">
+                    <p class="lato_bold">coupon discount</p>
+                    <p class="lato_light">Enter your coupon code if you have one</p>
+                    <div><input type="text" placeholder="State" class="buy_form_input"></div>
+                    <button>Apply coupon</button>
+                </div>
+
+
+                <div class="col-md-4 total_block">
+                    <form action="/catalogController/Index" method="GET">
+                        <button class="continue_btn">CONTINUE SHOPPING</button>
+                    </form>
+                    <div class="total">
+                        <p class="lato_regular">Sub total <span id="sum"></span></p>
+                        <p class="lato_bold">Grand total <span class="pink_font" id="grand_total"></span></p>
+                        <hr>
+                        <button id="order_btn">Proceed to checkout</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+

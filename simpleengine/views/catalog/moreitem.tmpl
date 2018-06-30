@@ -1,0 +1,13 @@
+<div class="row item_row">
+
+    {% for item in itemArray %}
+    <div class="item col-md-3">
+
+        <a href="/cardItemController/Index?idItem={{item.id}}" target="_blank">
+            <img src="{{item.smallImagePath}}" alt="photo" class="fitems">
+            <p class="name lato_regular black_font">{{item.title}}</p>
+            <p class="price lato_bold pink_font">${{item.price}}</p>
+        </a>
+    </div>
+    {%endfor%}
+</div>

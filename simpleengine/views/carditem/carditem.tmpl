@@ -1,0 +1,149 @@
+<main>
+
+    <div class="row margin_clear">
+        <div class="wrapper_arrivals">
+            <div class="col-md-9 center-block arrivals float_clear">
+                <p class="lato_black pink_font">New arrivals</p>
+                <p class="lato_light">Home/men/<span class="lato_bold pink_font">new arrivals</span></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row margin_clear">
+        <div class="foto_item_block col-md-12 padding_clear">
+
+            <div id="item_foto" style="background-image: url({{item.bigImagePath}})">
+                <p id="idItem" class="hidden">{{item.id}}</p>
+
+                <div class="wrap_arrow">
+                    <div class="list_arrow"></div>
+                </div>
+
+                <div class="wrap_arrow">
+                    <div class="list_arrow"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row margin_clear">
+        <div class="item_info col-md-9 center-block float_clear">
+            <p class="lato_bold pink_font info_par">{{item.category}} collection</p>
+            <hr class="wide_line">
+            <hr>
+            <p class="lato_black info_par">{{item.title}}</p>
+            <p class="lato_light info_par">{{item.description}}</p>
+            <p class="lato_bold info_par">MATERIAL: <span>{{item.material}}</span><span
+                        class="margin_span">DESIGNER: <span>{{item.designer}}</span></span>
+            </p>
+            <p class="lato_bold info_par">${{item.price}}</p>
+            <hr class="wide_line">
+
+            <div class="row margin_clear">
+                <div class="row margin_clear">
+                    <div class="cast_block col-md-6 center-block float_clear">
+
+                        <div class="col-md-4 cast_parameter">
+                            <p class="lato_bold choose_par">Choose color</p>
+
+                            <div class="btn-group">
+                                <button type="button" class="dropdown-toggle param_select" data-toggle="dropdown">
+
+                                    <div class="color"></div>
+                                    <p id="color_par">Red</p>
+
+                                    <div class="down_arrow"></div>
+                                </button>
+
+                                <ul class="dropdown-menu" id="color_menu" role="menu" aria-labelledby="dropdownMenu1">
+                                    {%for color in item.color %}
+                                    <li class="color_menu_item" role="presentation"><a><div class="color_in_item" style="background-color: {{color}}"></div>{{color}}</a></li>
+                                    {%endfor%}
+                                </ul>
+                            </div>
+
+
+                        </div>
+
+                        <div class="col-md-4 cast_parameter">
+                            <p class="lato_bold choose_par">Choose size</p>
+
+                            <div class="btn-group">
+                                <button type="button" class="dropdown-toggle param_select" data-toggle="dropdown">
+
+                                    <p id="size_par">XXL</p>
+                                    <div class="down_arrow"></div>
+                                </button>
+
+                                <ul class="dropdown-menu" id="size_menu" role="menu" aria-labelledby="dropdownMenu1">
+                                    {% for size in item.size %}
+                                    <li class="size_menu_item" role="presentation"><a>{{size}}</a></li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 cast_parameter">
+
+                            <p class="lato_bold choose_par">Quantity</p>
+                            <div>
+                                <input type="text" value="1" id="quan_inp">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row margin_clear">
+                    <div class="col-md-9 center-block float_clear">
+
+
+                            <button class="add_btn">
+                                <div></div>
+                                <p class="lato_bold">Add to Cart</p>
+                            </button>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row margin_clear">
+        <div class="col-md-9 center-block float_clear">
+            <p class="lato_black like_par">you may like also</p>
+        </div>
+    </div>
+
+    <div class="row margin_clear">
+        <div class="col-md-9 center-block float_clear padding_clear also">
+            <div class="col-md-3 also_item">
+                <div class="back">
+                    <img src="../images/singlepage/also1.png" alt="photo">
+                </div>
+                <p class="title_also lato_regular">BLAZE LEGGINGS</p>
+                <p class="price_also lato_bold pink_font">$52.00</p>
+            </div>
+            <div class="col-md-3 also_item">
+                <div class="back">
+                    <img src="../images/singlepage/also2.png" alt="photo">
+                </div>
+                <p class="title_also lato_regular">ALEXA SWEATER</p>
+                <p class="price_also lato_bold pink_font">$52.00</p>
+            </div>
+            <div class="col-md-3 also_item">
+                <div class="back">
+                    <img src="../images/singlepage/also3.png">
+                </div>
+                <p class="title_also lato_regular">AGNES TOP</p>
+                <p class="price_also lato_bold pink_font">$52.00</p>
+            </div>
+            <div class="col-md-3 also_item">
+                <div class="back">
+                    <img src="../images/singlepage/also4.jpg" alt="photo">
+                </div>
+                <p class="title_also lato_regular">SYLVA SWEATER</p>
+                <p class="price_also lato_bold pink_font">$52.00</p>
+            </div>
+        </div>
+    </div>

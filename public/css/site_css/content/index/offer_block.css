@@ -1,0 +1,102 @@
+.fever_block_md {
+  margin-top: 113px;
+  height: 100px;
+}
+.fever_block_md #offer_foto {
+  background-image: url(../images/photos/offer.jpg);
+  background-repeat: round;
+  height: 529px;
+}
+.fever_block_md .foto_wrap {
+  padding-right: 0;
+  padding-left: 0;
+}
+.fever_block_md .fever_wrap {
+  padding-left: 0;
+}
+.fever_block_md .offer_par {
+  float: left;
+  margin-top: 146px;
+  margin-left: 39px;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: left;
+}
+.fever_block_md .offer_par span:nth-of-type(1) {
+  color: #ffffff;
+  font-size: 53.62px;
+}
+.fever_block_md .offer_par span:nth-of-type(2) {
+  color: #f16d7f;
+  font-size: 53.62px;
+}
+.fever_block_md .offer_par span:nth-of-type(3) {
+  color: #ffffff;
+  font-size: 32.17px;
+}
+.fever_block_md #fever {
+  background-color: #222224;
+  height: 529px;
+}
+.fever_block_md .wrap_icons_fever_md {
+  height: 529px;
+  padding-right: 0;
+}
+.fever_block_md .wrap_icons_fever_md div {
+  margin: 0 auto;
+}
+.fever_block_md .wrap_icons_fever_md .car {
+  width: 45px;
+  height: 32px;
+  margin-top: 48px;
+  background-image: url(../images/icons/car.png);
+}
+.fever_block_md .wrap_icons_fever_md .pers {
+  width: 40px;
+  height: 40px;
+  margin-top: 124px;
+  background-image: url(../images/icons/pers.png);
+}
+.fever_block_md .wrap_icons_fever_md .crown {
+  width: 47px;
+  height: 35px;
+  margin-top: 114px;
+  background-image: url(../images/icons/crown.png);
+}
+.fever_block_md .wrap_par_fever {
+  padding-left: 0;
+}
+.fever_block_md .wrap_par_fever p {
+  color: #fbfbfb;
+  text-align: left;
+  float: left;
+}
+.fever_block_md .wrap_par_fever p:nth-of-type(odd) {
+  font-size: 1.25em;
+  font-weight: 700;
+}
+.fever_block_md .wrap_par_fever p:nth-of-type(even) {
+  font-size: 0.875em;
+  font-weight: 300;
+  width: 219px;
+  height: 58px;
+}
+.fever_block_md .wrap_par_fever p:nth-of-type(1) {
+  margin-top: 50px;
+}
+.fever_block_md .wrap_par_fever p:nth-of-type(2) {
+  margin-top: 17px;
+  clear: both;
+}
+.fever_block_md .wrap_par_fever p:nth-of-type(3) {
+  margin-top: 40px;
+}
+.fever_block_md .wrap_par_fever p:nth-of-type(4) {
+  margin-top: 21px;
+}
+.fever_block_md .wrap_par_fever p:nth-of-type(5) {
+  margin-top: 35px;
+}
+.fever_block_md .wrap_par_fever p:nth-of-type(6) {
+  margin-top: 17px;
+}

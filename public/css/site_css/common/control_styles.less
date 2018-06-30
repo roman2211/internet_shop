@@ -1,0 +1,65 @@
+.menu {
+    list-style: none;
+    a {
+        text-decoration: none;
+    }
+}
+
+.proport_block {
+    position: relative;
+    &:before {
+        display: block;
+        content: "";
+        width: 100%;
+    }
+}
+
+.proport_content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.black_pink_par {
+    color: @base_black;
+    span {
+        color: @base_pink;
+    }
+}
+
+.white_pink_par {
+    color: @base_white;
+    span {
+        color: @base_pink;
+    }
+}
+
+img {
+    max-width: 100%;
+}
+
+.center_par {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.left_par {
+    text-align: left;
+}
+
+.right_par {
+    text-align: right;
+    float: right;
+}
+
+.pink_btn {
+    background-color: @base_pink;
+    border-style: none;
+    .lato_regular;
+    font-size: 14px;
+    color: @base_white;
+    text-align: center;
+}
+

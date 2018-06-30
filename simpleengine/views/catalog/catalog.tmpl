@@ -1,0 +1,45 @@
+<div class="row margin_clear">
+    <div class="col-md-9 center-block float_clear par_container">
+        <p class="fet_it lato_bold black_font">Fetured Items</p>
+        <p class="shop_for lato_regular">Shop for items based on what we featured in this week</p>
+        <p id="count_items" class="hidden">8</p>
+    </div>
+</div>
+
+
+<div class="row margin_clear">
+
+    <div class="col-md-9 center-block float_clear" id="items_block">
+
+        <div class="row" id="item_row">
+
+            {% for item in itemArray %}
+            <div class="item col-md-3">
+
+                <a href="/cardItemController/Index?idItem={{item.id}}" target="_blank">
+                    <img src="{{item.smallImagePath}}" alt="photo" class="fitems">
+                    <p class="name lato_regular black_font">{{item.title}}</p>
+                    <p class="price lato_bold pink_font">${{item.price}}</p>
+                </a>
+            </div>
+            {%endfor%}
+        </div>
+
+    </div>
+</div>
+
+
+<div class="row margin_clear">
+    <div class="col-md-9 center-block float_clear">
+
+        <div id="browse_all">
+            <div id="wrapper_for_btn_catalog">
+                <p class="lato_bold">Browse More Products</p>
+                <div id="right_arrow"></div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+

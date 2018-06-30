@@ -1,0 +1,183 @@
+#checkout_block {
+    margin-top: 89px;
+    section {
+        height: 73px;
+        overflow: hidden;
+        border-top: solid 1px #e8e8e8;
+        &:nth-of-type(6) {
+            border-bottom: solid 1px #e8e8e8;
+        }
+        cursor:pointer;
+        transition: 0.3s height ease-in;
+        -webkit-transition: 0.3s height ease-in;
+        -moz-transition: 0.3s height ease-in;
+        -o-transition: 0.3s height ease-in;
+        &:hover {
+            height: 499px;
+        }
+    }
+    .title_checkout {
+        margin-top: 28px;
+    }
+    .red {
+        color: red;
+    }
+}
+
+.open {
+    &:checked~section {
+        height: 499px;
+    }
+    &:not(:checked)~section {
+        height: 73px;
+    }
+}
+
+.section_drop_block {
+    margin-top: 32px;
+    height: 426px;
+    .black_par {
+        .lato_regular;
+        .black_font;
+        font-size: 0.813em;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+    .grey_par {
+        .lato_regular;
+        color: #b3b2b2;
+        font-size: 0.813em;
+        font-weight: 400;
+    }
+}
+
+@keyframes anim {
+    0% {
+        background-color: white;
+        color: black;
+        height: 50px;
+    }
+    50% {
+        background-color: green;
+        color: blue;
+        height: 70px;
+    }
+    100% {
+        background-color: red;
+        color: white;
+        height: 50px;
+    }
+}
+
+.check_register {
+    input {
+        float: left;
+        margin-top: 2px;
+    }
+    label {
+        cursor: pointer;
+        display: block;
+        margin-left: 25px;
+    }
+    div {
+        &:nth-of-type(1) {
+            margin-top: 34px;
+        }
+        &:nth-of-type(2) {
+            margin-top: 20px;
+        }
+    }
+    p {
+        &:nth-of-type(2) {
+            margin-top: 15px;
+        }
+        &:nth-of-type(3) {
+            margin-top: 36px;
+        }
+        &:nth-of-type(4) {
+            margin-top: 15px;
+        }
+        &:nth-of-type(5) {
+            margin-top: 33px;
+        }
+        &:nth-of-type(6) {
+            margin-top: 15px;
+        }
+    }
+    button {
+        .small_btn;
+        width: 180px;
+        height: 50px;
+        text-transform: uppercase;
+        .buy_form_controls;
+        margin-top: 38px;
+        /*&:hover {
+            animation: anim 3s 2;
+            -webkit-animation: anim 3s 2;
+            -o-animation: anim 3s 2;
+            -moz-animation: anim 3s 2;
+        }*/
+    }
+}
+
+.log_in_block {
+    p {
+        &:nth-of-type(2) {
+            margin-top: 15px;
+        }
+        &:nth-of-type(3) {
+            margin-top: 27px;
+        }
+        &:nth-of-type(4) {
+            margin-top: 23px;
+        }
+        &:nth-of-type(5) {
+            margin-top: 22px;
+        }
+        &:nth-of-type(6) {
+            margin-left: 32px;
+            margin-top: 66px;
+            float: left;
+            text-transform: none;
+            /*transition: 0.5s all ease-in;
+            -webkit-transition: 0.5s all ease-in;
+            -moz-transition: 0.5s all ease-in;
+            -o-transition: 0.5s all ease-in;
+            &:hover {
+                transform: scale(1.5);
+                -webkit-transform: scale(1.5);
+                -moz-transform: scale(1.5);
+                -o-transform: scale(1.5);
+            }*/
+        }
+    }
+    button {
+        margin-top: 51px;
+        .small_btn;
+        width: 180px;
+        height: 50px;
+        text-transform: uppercase;
+        .buy_form_controls;
+        float: left;
+        /*transition: 0.5s all ease-in;
+        -webkit-transition: 0.5s all ease-in;
+        -o-transition: 0.5s all ease-in;
+        -moz-transition: 0.5s all ease-in;
+        &:hover {
+            transform: rotate(360deg);
+            -webkit-transform: rotate(360deg);
+            -moz-transform: rotate(360deg);
+            -o-transform: rotate(360deg);
+        }*/
+    }
+    input {
+        .buy_form_controls;
+        width: 390px;
+        height: 45px;
+        font-size: 20px;
+    }
+
+    .pass_input {
+        font-size: 40px;
+    }
+}

@@ -1,0 +1,48 @@
+
+x
+.bg-car {
+    width: 45px; height: 32px;
+    background: url('css_sprites.png') -211px -10px;
+}
+
+x
+.bg-cart {
+    width: 32px; height: 29px;
+    background: url('css_sprites.png') -99px -10px;
+}
+
+x
+.bg-crown {
+    width: 47px; height: 35px;
+    background: url('css_sprites.png') -276px -10px;
+}
+
+x
+.bg-logo {
+    width: 59px; height: 51px;
+    background: url('css_sprites.png') -343px -10px;
+}
+
+x
+.bg-pers {
+    width: 40px; height: 40px;
+    background: url('css_sprites.png') -151px -10px;
+}
+
+x
+.bg-pink_cart {
+    width: 26px; height: 24px;
+    background: url('css_sprites.png') -53px -10px;
+}
+
+x
+.bg-portr {
+    width: 83px; height: 83px;
+    background: url('css_sprites.png') -422px -10px;
+}
+
+x
+.bg-white_cart {
+    width: 23px; height: 22px;
+    background: url('css_sprites.png') -10px -10px;
+}

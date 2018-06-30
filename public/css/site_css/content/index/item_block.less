@@ -1,0 +1,143 @@
+.par_container {
+    margin-top: 100px;
+}
+
+.fet_it {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.shop_for {
+    margin-top: 16px;
+    color: #9f9f9f;
+    font-size: 0.875em;
+    font-weight: 400;
+    text-align: center;
+}
+
+#items_block {
+    margin-top: 60px;
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.item {
+    a {
+        text-decoration: none;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    padding-right: 15px;
+    &:hover {
+        #hover_block {
+            visibility: visible;
+        }
+    }
+}
+
+#item_row {
+    div:nth-child(4n + 1){
+        clear: both;
+    }
+}
+
+#hover_block {
+    position: absolute;
+    visibility: hidden;
+    background-color: #3a3838;
+    width: 100%;
+    height: 100%;
+    #cart_block {
+        float: left;
+        border: solid 1px @base_white; 
+        box-sizing: border-box;
+        background-color: @base_white;
+        width: 123px;
+        height: 39px;
+        margin-left: 70px;
+        margin-top: 98px;
+    }
+}
+
+#white_cart {
+    float: left;
+    margin-left: 12px;
+    margin-top: 10px;
+    width: 23px;
+    height: 22px;
+    background-image: url(/public/images/icons/white_cart.png);
+}
+
+#add {
+    float: left;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 700;
+    text-align: left;
+    margin-top: 12px;
+    margin-left: 8px;
+}
+
+.name {
+    margin-top: 20px;
+    margin-left: 14px;
+    font-size: 13px;
+    font-weight: 400;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.price {
+    margin-top: 17px;
+    margin-left: 13px;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+#browse_all {
+    background-color: #f16d7f;
+    width: 30%;
+    height: 48px;
+    margin: 100px auto 0 auto;
+    cursor: pointer;
+    #wrapper_for_btn_index {
+        margin: 0 auto;
+        width: 40%;
+    }
+    #wrapper_for_btn_catalog {
+        margin: 0 auto;
+        width: 50%;
+    }
+    p {
+        float: left;
+        margin-left: 24px;
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1;
+        text-align: center;
+        margin-top: 16px;
+    }
+    #right_arrow {
+        width: 15px;
+        height: 7px;
+        float: left;
+        margin-top: 7px;
+        margin-left: 9px;
+        &:before {
+            content: "\f178";
+            font-family: FontAwesome;
+            color: #ffffff;
+            font-size: 0.938em;
+            font-weight: 400;
+            line-height: 2.9;
+            text-align: center;
+        }
+    }
+}

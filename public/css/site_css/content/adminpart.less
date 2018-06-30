@@ -1,0 +1,85 @@
+
+.admin_menu {
+  li {
+    display: inline-block;
+    text-align: center;
+  }
+
+  list-style: none;
+}
+
+.prod_row_adm {
+  p {
+    text-align: center;
+    .lato_regular;
+  }
+}
+
+.icon_style {
+  color: #0b0cff;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.delete_btn, .edit_btn {
+  text-align: center;
+}
+
+.delete_btn {
+   &:before {
+     font-family: FontAwesome;
+     content: "\f057";
+     .icon_style;
+   }
+}
+
+.edit_btn {
+   &:before {
+     font-family: FontAwesome;
+     content: "\f044";
+     .icon_style;
+   }
+}
+
+#new_prod {
+  display: block;
+  margin: 0 auto;
+  height: 50px;
+  width: 20%;
+  .lato_bold;
+  background-color: #ff4d68;
+  color: #fff;
+}
+
+#modal_window{
+  background-color: #2aabd2;
+  position: absolute;
+  button {
+    height: 50px;
+    width: 100px;
+    margin-top: 40px;
+  }
+}
+
+#wrapper_controls {
+  width: auto;
+  input, textarea {
+    display: block;
+    width: 90%;
+  }
+  textarea {
+    margin-left: 30px;
+  }
+
+  label {
+    margin-top: 30px;
+  }
+
+  ul {
+    list-style: none;
+  }
+  #descr_area_lbl {
+    display: block;
+    text-align: center;
+  }
+}

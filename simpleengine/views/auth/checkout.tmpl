@@ -1,0 +1,100 @@
+<main>
+
+    <div class="row margin_clear">
+
+        <div class="wrapper_arrivals">
+
+            <div class="col-md-9 center-block arrivals float_clear">
+                <p class="lato_black pink_font">New arrivals</p>
+                <p class="lato_light">Home/men/<span class="lato_bold pink_font">new arrivals</span></p>
+            </div>
+        </div>
+    </div>
+
+    <div id="checkout_block">
+
+        <div class="row margin_clear">
+            <section class="col-md-9 center-block float_clear">
+                <input class="open" id="ship_adr" type="checkbox" hidden>
+                <label class="lato_bold black_font title_checkout" for="ship_adr">
+                    01. SHIPPING ADRESS</label>
+
+                <div class="row margin_clear">
+                    <div class="section_drop_block">
+                        <div class="col-md-3">
+                            <div class="check_register">
+                                <p class="black_par">Check as a guest or register</p>
+                                <p class="grey_par">Register with us for future convenience</p>
+
+                                <div>
+                                    <input type="radio" checked name="reg_radio"/>
+                                    <label class="black_par">checkout as guest</label>
+                                </div>
+                                <div>
+                                    <input type="radio" name="reg_radio"/>
+                                    <label class="black_par">register</label>
+                                </div>
+                                <p class="black_par">register and save time!</p>
+                                <p class="grey_par">Register with us for future convenience</p>
+                                <span></span>
+                                <p class="grey_par">Fast and easy checkout</p>
+                                <span></span>
+                                <p class="grey_par">Easy access to your order history and status</p>
+
+                                <button>Continue</button>
+                            </div>
+                        </div>
+
+                        <form action="/authController/ShowAccount" method="GET">
+                        <div class="col-md-6 col-md-offset-3 log_in_block">
+                            <p class="black_par">Already registed?</p>
+                            <p class="grey_par">Please log in below</p>
+                            <p class="black_par">EMAIL ADDRESS<span class="red">*</span></p>
+                            <input type="email" name="email" value="{{email}}">
+                            <p class="black_par">PASSWORD<span class="lato_regular red">*</span></p>
+                            <input type="password" name="pass" value="{{pass}}" class="pass_input">
+                            <p class="red">*Required Fileds</p>
+                            <button>Log in</button>
+                            <p class="black_par">Forgot Password ?</p>
+                        </div>
+                        </form>
+
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="row margin_clear">
+            <section class="col-md-9 center-block float_clear">
+                <p class="lato_bold black_font title_checkout">02. BILLING INFORMATION</p>
+            </section>
+        </div>
+
+        <div class="row margin_clear">
+            <section class="col-md-9 center-block float_clear">
+                <p class="lato_bold black_font title_checkout">03. SHIPPING INFORMATION</p>
+            </section>
+        </div>
+
+        <div class="row margin_clear">
+            <section class="col-md-9 center-block float_clear">
+                <p class="lato_bold black_font title_checkout">04. SHIPPING METHOD</p>
+            </section>
+        </div>
+
+        <div class="row margin_clear">
+            <section class="col-md-9 center-block float_clear">
+                <p class="lato_bold black_font title_checkout">05. PAYMENT METHOD</p>
+            </section>
+        </div>
+
+        <div class="row margin_clear">
+            <section class="col-md-9 center-block float_clear">
+                <p class="lato_bold black_font title_checkout">06. ORDER REVIEW</p>
+            </section>
+        </div>
+
+
+    </div>
+
+

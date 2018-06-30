@@ -1,0 +1,11 @@
+
+<h1 class="welcome">{{userName}}, welcome in Your account!</h1>
+
+<a href="/?isOut=true">
+    <div class="acc_pane">
+        {% if isAdmin %}
+            {% include 'admin_btn.tmpl' %}
+        {% endif %}
+        <button class="out_btn acc_btn">Sign out</button>
+    </div>
+</a>
